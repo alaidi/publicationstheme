@@ -94,7 +94,7 @@ class PublicationsThemePlugin extends ThemePlugin {
             $this->modifyStyle('stylesheet', array('addLessVariables' => join("\n", $additionalLessVariables)));
         }
 
-        $this->addScript('idaiworld-dropdown', 'js/idai-world.js');
+        // $this->addScript('idaiworld-dropdown', 'js/idai-world.js');
         $this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
 
     }
@@ -149,6 +149,8 @@ class PublicationsThemePlugin extends ThemePlugin {
             </g>
         </svg>';
         $templateMgr->assign("orcidIcon", $orcidIconSvg);
+        $templateMgr->addJavaScript('tutorialExampleScript', 'https://publications.alayen.edu.iq/js/idai-world.js');
+
 		return false;
     }
 }

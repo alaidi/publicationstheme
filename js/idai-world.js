@@ -40,26 +40,26 @@ function enrichHeader() {
             const iDAIpublicationsLogo = document.createElement('img');
             iDAIpublicationsLogo.id = 'idai-publications-logo';
             iDAIpublicationsLogo.src =
-                relativePath + '/plugins/themes/publicationstheme/images/idai-publications-logo.png';
+                'https://publications.alayen.edu.iq/js/auiq_logo.webp';
 
             idaiWorldNavDropdown.appendChild(iDAIpublicationsLogo);
             navigationUserElement.appendChild(idaiWorldNavDropdown);
 
             document.getElementById('idai-publications-logo').src =
-                relativePath + '/plugins/themes/publicationstheme/images/idai-publications-logo.png';
+                 'https://publications.alayen.edu.iq/js/auiq_logo.webp';
 
-            /* add DAI-Logo to pkp_site_name-Header
+            /* add Alayen-Logo to pkp_site_name-Header
             * --------------------------------------*/
             const pkpSiteNameHeader = document.getElementsByClassName('pkp_site_name');
 
             const DaiLogo = document.createElement('a');
             DaiLogo.id = "dai-logo"
-            DaiLogo.href = "https://www.dainst.org/";
+            DaiLogo.href = "https://alayen.edu.iq/";
 
             const DaiLogoImage = document.createElement('img');
             DaiLogoImage.id = 'dai-logo-img';
             DaiLogoImage.src =
-                relativePath + '/plugins/themes/publicationstheme/images/dai-logo-weiß.png';
+                 'https://publications.alayen.edu.iq/js/logo_top.png';
 
             DaiLogo.appendChild(DaiLogoImage);
             pkpSiteNameHeader[0].appendChild(DaiLogo);
@@ -80,7 +80,7 @@ function attachFooter() {
             footerContainer.innerHTML = "" +
                 "<p>" +
                 "<span id=\"contact\">Contact: " +
-                "       <a href=\"mailto:idai.publications@dainst.de\">idai.publications@dainst.de</a>" +
+                "       <a href=\"mailto:admin@alayen.edu.iq\">admin@alayen.edu.iq</a>" +
                 "</span>" +
                 "</p>";
 
@@ -88,12 +88,12 @@ function attachFooter() {
             footerAdditionalRow.id = 'footer-additional-row';
             footerAdditionalRow.innerHTML = "" +
                 "<p>" +
-                "<span class=\"slogan\">iDAI.publications is a service of the German Archaeological Institute.</span>" +
+                "<span class=\"slogan\">AUIQ Academic Press is a service of Alayen University.</span>" +
                 "<span class=\"links\">" +
-                "   <a href=\"https://www.dainst.org/en/data-protection\" target=\"_blank\">Data Protection Regulation</a>" +
+                "   <a href=\"https://publications.alayen.edu.iq/journals/index.php/index/data-protection\" target=\"_blank\">Data Protection Regulation</a>" +
                 "</span>" +
                 "<span class=\"links\">" +
-                "   <a href=\"https://publications.dainst.org/journals/index/termsOfUse\" target=\"_blank\">Legal notice</a>" +
+                "   <a href=\"https://publications.alayen.edu.iq/journals/index.php/index/terms-of-use\" target=\"_blank\">Legal notice</a>" +
                 "</span>" +
                 "<span>" +
                 "   <a href=\"https://pkp.sfu.ca\" target=\"_blank\">" +
@@ -104,7 +104,7 @@ function attachFooter() {
             const footerLogo = document.createElement('img');
             footerLogo.id = 'idai-footer-logo';
             footerLogo.src =
-                relativePath + '/plugins/themes/publicationstheme/images/idai_footer.png';
+                 'https://publications.alayen.edu.iq/js/auiq_footer.webp';
 
             idaiWorldFooter.appendChild(footerContainer);
             idaiWorldFooter.appendChild(footerAdditionalRow);
